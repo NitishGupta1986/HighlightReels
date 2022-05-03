@@ -26,4 +26,18 @@ class SplashActivity : AppCompatActivity() {
         activityScope.cancel()
         super.onPause()
     }
+    /**var timer = Timer()
+    override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_splash)
+    timer.schedule(3000) {
+    var intent = Intent(this@TimerSplashActivity, HomeActivity::class.java)
+    startActivity(intent)
+    finish()
+    }
+    }
+    override fun onPause() {
+    timer.cancel()
+    super.onPause()
+    }**/
 }
