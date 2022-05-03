@@ -17,8 +17,8 @@ class SplashActivity : AppCompatActivity() {
         activityScope.launch {
             delay(3000)
             var intent = Intent(this@SplashActivity, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
+            //startActivity(intent)
+            //finish()
         }
     }
 
@@ -31,7 +31,7 @@ class SplashActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_splash)
     timer.schedule(3000) {
-    var intent = Intent(this@TimerSplashActivity, HomeActivity::class.java)
+    var intent = Intent(this@SplashActivity, LoginActivity::class.java)
     startActivity(intent)
     finish()
     }
