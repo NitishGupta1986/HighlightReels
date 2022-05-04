@@ -38,8 +38,6 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.imageViewAddFriend -> {
             }
-
         }
-
     }
 }
