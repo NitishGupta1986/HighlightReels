@@ -1,5 +1,6 @@
 package com.android.highreels.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -12,11 +13,10 @@ import kotlinx.android.synthetic.main.logo_text_layout.view.*
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
         supportActionBar?.hide()
         logo_layout.textViewWelcome.visibility = View.GONE
-        setContentView(R.layout.activity_home)
         initListeners()
-
     }
 
     private fun initListeners() {
@@ -30,7 +30,8 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.imageViewMyVideos -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                var intent = Intent(this@HomeActivity, ShareActivity::class.java)
+                startActivity(intent)
             }
             R.id.imageViewCreateVideos -> {
                 MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()

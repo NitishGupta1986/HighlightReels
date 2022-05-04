@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_View"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/a" />
+
+    <com.android.highreels.customViewSemiBold.SemiBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/image_View"
+        android:text="Friend Name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp" />
+
+
+    <com.android.highreels.customViewRegular.RegularButton
+        style="@style/MyButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="Share"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+</RelativeLayout>

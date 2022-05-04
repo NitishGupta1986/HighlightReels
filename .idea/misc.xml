@@ -6,17 +6,25 @@
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.213" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/custom_cursor.xml" value="0.1235" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/gradient_background.xml" value="0.1325" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/ic_arrow_back_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.1" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1585" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.171" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/ic_voice_search_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/linear_gradient.xml" value="0.1" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/menu_add_friend.xml" value="0.171" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/ripple_background.xml" value="0.1325" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/round_back_ground.xml" value="0.1235" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/drawable/round_corner.xml" value="0.1115" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_login.xml" value="0.1718683197947841" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_login_signup.xml" value="0.14" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_share.xml" value="0.1718683197947841" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_share.xml" value="0.20595854922279794" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/item_share_to.xml" value="0.25" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/logo_text_layout.xml" value="0.1718683197947841" />
+        <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/search_view.xml" value="0.1" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/layout/toast_container.xml" value="0.22" />
         <entry key="..\:/Users/HP_Owner/Desktop/Zenid_Infotech/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1015" />
       </map>
