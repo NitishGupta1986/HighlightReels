@@ -1,5 +1,6 @@
 package com.android.highreels.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ class LoginSignUpActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_login_signup)
         relativeLayoutSignUpInActive.setOnClickListener(this)
         relativeLayoutSignInInactive.setOnClickListener(this)
+        buttonSignIn.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -32,6 +34,11 @@ class LoginSignUpActivity : AppCompatActivity(), View.OnClickListener {
                 scrollViewSignUp.visibility = View.GONE
                 linearLayoutSignUpActive.visibility = View.GONE
                 linearLayoutSignInActive?.visibility = View.VISIBLE
+            }
+            R.id.buttonSignIn -> {
+                var intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+
             }
         }
     }
