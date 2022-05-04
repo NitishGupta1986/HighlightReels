@@ -17,8 +17,8 @@ class SplashActivity : AppCompatActivity() {
         activityScope.launch {
             delay(3000)
             var intent = Intent(this@SplashActivity, LoginSignUpActivity::class.java)
-            //startActivity(intent)
-            //finish()
+            startActivity(intent)
+            finish()
         }
     }
 

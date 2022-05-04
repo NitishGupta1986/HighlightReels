@@ -24,7 +24,8 @@
 
         <activity
             android:name=".activities.LoginSignUpActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
 
         <activity
             android:name=".activities.MainActivity"
