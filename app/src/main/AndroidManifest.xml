@@ -28,7 +28,7 @@
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.HomeActivity"
             android:launchMode="standard"
             android:screenOrientation="portrait" />
     </application>
