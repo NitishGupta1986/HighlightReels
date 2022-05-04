@@ -12,6 +12,11 @@
         android:theme="@style/Theme.HighlightReels"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activities.ShareActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activities.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
@@ -21,14 +26,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.LoginSignUpActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-
         <activity
             android:name=".activities.HomeActivity"
+            android:exported="false"
             android:launchMode="standard"
             android:screenOrientation="portrait" />
     </application>

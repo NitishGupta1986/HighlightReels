@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.android.highreels.R
+import com.android.highreels.Toast.MDToast
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_login_signup.logo_layout
 import kotlinx.android.synthetic.main.logo_text_layout.view.*
@@ -29,14 +30,19 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.imageViewMyVideos -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.imageViewCreateVideos -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.imageViewFriendsVideos -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.imageViewMyAccount -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.imageViewAddFriend -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
         }
     }
