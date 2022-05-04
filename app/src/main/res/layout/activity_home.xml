@@ -305,7 +305,6 @@
                                 android:text="Account"
                                 android:textColor="@color/white" />
 
-
                         </RelativeLayout>
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
