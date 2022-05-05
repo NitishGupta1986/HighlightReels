@@ -7,7 +7,7 @@ import com.android.highreels.R
 class ShareActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_share)
         supportActionBar?.hide()
+        setContentView(R.layout.activity_share)
     }
 }
