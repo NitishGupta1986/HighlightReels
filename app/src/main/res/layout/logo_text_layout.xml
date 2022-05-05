@@ -11,7 +11,7 @@
         android:layout_height="@dimen/_60sdp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_50sdp"
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/splash_image" />
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/splashImage"
         android:layout_centerHorizontal="true"
-        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
         android:includeFontPadding="false"
         android:text="Sign In to Highlight Reel"
         android:textColor="@color/white"

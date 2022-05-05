@@ -173,7 +173,7 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical">
 
@@ -214,7 +214,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_42sdp"
                     android:layout_marginHorizontal="@dimen/_20sdp"
-                    android:layout_marginVertical="@dimen/_30sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
                     android:hint="Password"
                     app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
                     app:boxCornerRadiusBottomStart="@dimen/_5sdp"
@@ -264,7 +264,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginVertical="@dimen/_40sdp"
+                    android:layout_marginVertical="@dimen/_30sdp"
                     android:includeFontPadding="false"
                     android:padding="@dimen/_2sdp"
                     android:text="Forgot Password ?"
@@ -287,7 +287,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/relativeLayoutSignInSignUp"
-            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:fillViewport="true"
             android:overScrollMode="never"
             android:visibility="gone">
@@ -295,7 +295,7 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical">
 
@@ -392,7 +392,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_42sdp"
                     android:layout_marginHorizontal="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
                     android:hint="Email Address"
                     app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
                     app:boxCornerRadiusBottomStart="@dimen/_5sdp"
@@ -425,7 +425,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_42sdp"
                     android:layout_marginHorizontal="@dimen/_20sdp"
-                    android:layout_marginVertical="@dimen/_30sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
                     android:hint="Password"
                     app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
                     app:boxCornerRadiusBottomStart="@dimen/_5sdp"
@@ -494,7 +494,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_42sdp"
                     android:layout_marginHorizontal="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
                     android:hint="Mobile No."
                     app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
                     app:boxCornerRadiusBottomStart="@dimen/_5sdp"
@@ -527,7 +527,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_marginHorizontal="@dimen/_20sdp"
-                    android:layout_marginVertical="@dimen/_30sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
                     android:background="@drawable/gradient_background"
                     android:clickable="true"
                     android:focusable="true"
