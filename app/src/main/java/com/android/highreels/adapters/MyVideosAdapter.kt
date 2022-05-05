@@ -5,28 +5,28 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.highreels.R
-import com.android.highreels.customViewRegular.RegularButton
-import com.android.highreels.customViewSemiBold.SemiBoldTextView
-import com.android.highreels.responseModels.shareToResponse
+import com.android.highreels.customViewBold.BoldTextView
+import com.android.highreels.customViewRegular.RegularTextView
+import com.android.highreels.responseModels.MyVideosResponse
 import com.google.android.material.imageview.ShapeableImageView
 
-class ShareAdapter constructor(
+class MyVideosAdapter constructor(
 
-    private val mList: ArrayList<shareToResponse>
+    private val mList: ArrayList<MyVideosResponse>
 ) :
-    RecyclerView.Adapter<ShareAdapter.ShareViewHolder>() {
+    RecyclerView.Adapter<MyVideosAdapter.ShareViewHolder>() {
 
     class ShareViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
-        val shareButton: RegularButton
-        val imageViewProfile: ShapeableImageView
-        val textViewName: SemiBoldTextView
+        val textViewTimeAgo: RegularTextView
+        val imageViewUser: ShapeableImageView
+        val textViewName: BoldTextView
 
         init {
-            imageViewProfile = itemView.findViewById(R.id.imageViewProfile)
+            imageViewUser = itemView.findViewById(R.id.imageViewUser)
             textViewName = itemView.findViewById(R.id.textViewName)
-            shareButton = itemView.findViewById(R.id.shareButton)
-            imageViewProfile.setOnClickListener(this)
+            textViewTimeAgo = itemView.findViewById(R.id.textViewTimeAgo)
+            imageViewUser.setOnClickListener(this)
         }
 
         override fun onClick(view: View?) {
@@ -35,7 +35,7 @@ class ShareAdapter constructor(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShareViewHolder {
         val view: View = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_share_to, parent, false)
+            .inflate(R.layout.item_my_videos, parent, false)
         return ShareViewHolder(view)
     }
 
@@ -46,7 +46,7 @@ class ShareAdapter constructor(
         //holder.imageViewProfile.setImageURI("")
 
         // sets the text to the textview from our itemHolder class
-        holder.textViewName.text = ItemsViewModel.text
+        //holder.textViewName.text = ItemsViewModel.text
     }
 
     override fun getItemCount(): Int {

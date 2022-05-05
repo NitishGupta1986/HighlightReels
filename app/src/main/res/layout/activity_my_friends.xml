@@ -27,11 +27,10 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp">
 
-            <com.google.android.material.appbar.MaterialToolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/materialToolBar"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:contentInsetStartWithNavigation="@dimen/_10sdp"
                 app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
                 app:navigationIconTint="@color/white"
                 app:titleCentered="true" />
@@ -40,25 +39,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Share To"
+                android:text="My Friends"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageViewAddFriend"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                app:srcCompat="@drawable/menu_add_friend" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageViewSearch"
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_toStartOf="@id/imageViewAddFriend"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:tint="@color/white"
                 app:srcCompat="@drawable/ic_baseline_search_24" />
 
@@ -71,7 +62,7 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewShare"
+            android:id="@+id/recyclerViewFriends"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/relativeLayoutToolBar"

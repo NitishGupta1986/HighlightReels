@@ -40,27 +40,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Share To"
+                android:text="My Videos"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageViewAddFriend"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                app:srcCompat="@drawable/menu_add_friend" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageViewSearch"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerVertical="true"
-                android:layout_toStartOf="@id/imageViewAddFriend"
-                android:tint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_search_24" />
 
             <View
                 android:layout_width="match_parent"
@@ -71,12 +53,12 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewShare"
+            android:id="@+id/recyclerViewMyVideos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/relativeLayoutToolBar"
-            tools:itemCount="20"
-            tools:listitem="@layout/item_share_to" />
+            tools:itemCount="10"
+            tools:listitem="@layout/item_my_videos" />
 
     </RelativeLayout>
 

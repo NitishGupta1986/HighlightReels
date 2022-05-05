@@ -5,7 +5,7 @@
     android:layout_height="@dimen/_70sdp">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/image_View"
+        android:id="@+id/imageViewProfile"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_centerVertical="true"
@@ -17,15 +17,17 @@
         app:srcCompat="@drawable/a" />
 
     <com.android.highreels.customViewSemiBold.SemiBoldTextView
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/image_View"
+        android:layout_toEndOf="@+id/imageViewProfile"
         android:text="Friend Name"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp" />
 
     <com.android.highreels.customViewRegular.RegularButton
+        android:id="@+id/shareButton"
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_22sdp"
         android:layout_alignParentEnd="true"

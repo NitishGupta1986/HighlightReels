@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/f_image" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:contentInsetStartWithNavigation="@dimen/_10sdp"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:navigationIconTint="@color/white"
+                app:titleCentered="true" />
+
+            <com.android.highreels.customViewBold.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="My Profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewAddFriend"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:srcCompat="@drawable/menu_add_friend" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:contentPadding="@dimen/_1sdp"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:srcCompat="@drawable/a"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="@dimen/_2sdp" />
+
+        <com.android.highreels.customViewSemiBold.SemiBoldTextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_edit_profile"
+            android:drawablePadding="@dimen/_5sdp"
+            android:includeFontPadding="false"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:drawableEndCompat="@drawable/ic_edit_profile" />
+
+        <com.android.highreels.customViewLight.LightTextView
+            android:id="@+id/textViewMailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:includeFontPadding="false"
+            android:text="abc@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.android.highreels.customViewLight.LightTextView
+            android:id="@+id/textViewMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMailID"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="000-000-0000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <com.android.highreels.customViewBold.BoldTextView
+            android:id="@+id/textViewMyVideos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMobileNumber"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_toStartOf="@id/textViewMobileNumber"
+            android:includeFontPadding="false"
+            android:text="875"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.android.highreels.customViewBold.BoldTextView
+            android:id="@+id/textViewMyFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMobileNumber"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_toEndOf="@id/textViewMobileNumber"
+            android:includeFontPadding="false"
+            android:text="799"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.android.highreels.customViewLight.LightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMyFriends"
+            android:layout_toStartOf="@id/textViewMobileNumber"
+            android:includeFontPadding="false"
+            android:text="My Video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.android.highreels.customViewLight.LightTextView
+            android:id="@+id/textViewMyFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMyFriends"
+            android:layout_toEndOf="@id/textViewMobileNumber"
+            android:includeFontPadding="false"
+            android:text="My Friends"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewMyFriend"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:clipToPadding="false"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            tools:listitem="@layout/item_profile_videos" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

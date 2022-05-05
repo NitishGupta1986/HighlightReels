@@ -30,17 +30,20 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.imageViewMyVideos -> {
-                var intent = Intent(this@HomeActivity, ShareActivity::class.java)
+                var intent = Intent(this@HomeActivity, MyVideosActivity::class.java)
                 startActivity(intent)
             }
             R.id.imageViewCreateVideos -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                var intent = Intent(this@HomeActivity, CreateVideoActivity::class.java)
+                startActivity(intent)
             }
             R.id.imageViewFriendsVideos -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                var intent = Intent(this@HomeActivity, MyFriendsActivity::class.java)
+                startActivity(intent)
             }
             R.id.imageViewMyAccount -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                var intent = Intent(this@HomeActivity, ProfileActivity::class.java)
+                startActivity(intent)
             }
             R.id.imageViewAddFriend -> {
                 MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()

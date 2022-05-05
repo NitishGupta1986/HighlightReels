@@ -1,32 +1,27 @@
 package com.android.highreels.adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.highreels.R
-import com.android.highreels.customViewRegular.RegularButton
-import com.android.highreels.customViewSemiBold.SemiBoldTextView
-import com.android.highreels.responseModels.shareToResponse
-import com.google.android.material.imageview.ShapeableImageView
+import com.android.highreels.cornerRoundImage.RoundedImageView
+import com.android.highreels.responseModels.ProfileResponse
 
-class ShareAdapter constructor(
-
-    private val mList: ArrayList<shareToResponse>
+class ProfileAdapter constructor(
+    private val context: Context,
+    private val mList: List<ProfileResponse>
 ) :
-    RecyclerView.Adapter<ShareAdapter.ShareViewHolder>() {
+    RecyclerView.Adapter<ProfileAdapter.ShareViewHolder>() {
 
     class ShareViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
-        val shareButton: RegularButton
-        val imageViewProfile: ShapeableImageView
-        val textViewName: SemiBoldTextView
+        val roundImage: RoundedImageView
 
         init {
-            imageViewProfile = itemView.findViewById(R.id.imageViewProfile)
-            textViewName = itemView.findViewById(R.id.textViewName)
-            shareButton = itemView.findViewById(R.id.shareButton)
-            imageViewProfile.setOnClickListener(this)
+            roundImage = itemView.findViewById(R.id.roundImage)
+            roundImage.setOnClickListener(this)
         }
 
         override fun onClick(view: View?) {
@@ -35,7 +30,7 @@ class ShareAdapter constructor(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShareViewHolder {
         val view: View = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_share_to, parent, false)
+            .inflate(R.layout.item_profile_videos, parent, false)
         return ShareViewHolder(view)
     }
 
@@ -46,7 +41,7 @@ class ShareAdapter constructor(
         //holder.imageViewProfile.setImageURI("")
 
         // sets the text to the textview from our itemHolder class
-        holder.textViewName.text = ItemsViewModel.text
+        //holder.textViewName.text = ItemsViewModel.text
     }
 
     override fun getItemCount(): Int {

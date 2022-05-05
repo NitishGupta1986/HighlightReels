@@ -7,14 +7,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.highreels.R
 import com.android.highreels.customViewRegular.RegularButton
 import com.android.highreels.customViewSemiBold.SemiBoldTextView
-import com.android.highreels.responseModels.shareToResponse
+import com.android.highreels.responseModels.FriendsResponse
 import com.google.android.material.imageview.ShapeableImageView
 
-class ShareAdapter constructor(
+class FriendsAdapter constructor(
 
-    private val mList: ArrayList<shareToResponse>
+    private val mList: ArrayList<FriendsResponse>
 ) :
-    RecyclerView.Adapter<ShareAdapter.ShareViewHolder>() {
+    RecyclerView.Adapter<FriendsAdapter.ShareViewHolder>() {
 
     class ShareViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {

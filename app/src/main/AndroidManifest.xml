@@ -12,6 +12,18 @@
         android:theme="@style/Theme.HighlightReels"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activities.MyVideosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CreateVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.ShareActivity"
             android:exported="false"
             android:launchMode="standard"
