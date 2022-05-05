@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
+        android:alpha="0.7"
         app:srcCompat="@drawable/f_image" />
 
     <androidx.appcompat.widget.AppCompatImageView

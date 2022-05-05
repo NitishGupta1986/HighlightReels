@@ -8,7 +8,7 @@ import com.android.highreels.R
 import com.android.highreels.customViewBold.BoldTextView
 import com.android.highreels.customViewRegular.RegularTextView
 import com.android.highreels.responseModels.MyVideosResponse
-import com.google.android.material.imageview.ShapeableImageView
+import com.makeramen.roundedimageview.RoundedImageView
 
 class MyVideosAdapter constructor(
 
@@ -19,7 +19,7 @@ class MyVideosAdapter constructor(
     class ShareViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
         val textViewTimeAgo: RegularTextView
-        val imageViewUser: ShapeableImageView
+        val imageViewUser: RoundedImageView
         val textViewName: BoldTextView
 
         init {

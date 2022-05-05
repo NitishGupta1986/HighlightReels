@@ -47,6 +47,7 @@ class ShareAdapter constructor(
 
         // sets the text to the textview from our itemHolder class
         holder.textViewName.text = ItemsViewModel.text
+        holder.shareButton.text = "Share"
     }
 
     override fun getItemCount(): Int {

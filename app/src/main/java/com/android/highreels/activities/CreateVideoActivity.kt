@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.android.highreels.R
+import com.android.highreels.Toast.MDToast
 import kotlinx.android.synthetic.main.activity_create_video.*
 
 class CreateVideoActivity : AppCompatActivity(), View.OnClickListener {
@@ -25,14 +26,19 @@ class CreateVideoActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.relativeLayoutOne -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.relativeLayoutTwo -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.relativeLayoutThree -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.relativeLayoutFour -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
             R.id.relativeLayoutUploadVideo -> {
+                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
             }
         }
     }

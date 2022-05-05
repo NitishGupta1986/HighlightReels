@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.highreels.R
-import com.android.highreels.cornerRoundImage.RoundedImageView
 import com.android.highreels.responseModels.ProfileResponse
+import com.makeramen.roundedimageview.RoundedImageView
 
 class ProfileAdapter constructor(
     private val context: Context,
@@ -21,7 +21,7 @@ class ProfileAdapter constructor(
 
         init {
             roundImage = itemView.findViewById(R.id.roundImage)
-            roundImage.setOnClickListener(this)
+            //roundImage.setOnClickListener(this)
         }
 
         override fun onClick(view: View?) {
@@ -38,7 +38,7 @@ class ProfileAdapter constructor(
         val ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-        //holder.imageViewProfile.setImageURI("")
+        holder.roundImage.setImageResource(mList[position].profilePicURL)
 
         // sets the text to the textview from our itemHolder class
         //holder.textViewName.text = ItemsViewModel.text

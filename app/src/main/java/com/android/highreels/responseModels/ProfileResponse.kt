@@ -1,3 +1,3 @@
 package com.android.highreels.responseModels
 
-data class ProfileResponse(val profilePicURL: String)
+data class ProfileResponse(val profilePicURL: Int)

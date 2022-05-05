@@ -47,6 +47,7 @@ class FriendsAdapter constructor(
 
         // sets the text to the textview from our itemHolder class
         holder.textViewName.text = ItemsViewModel.text
+        holder.shareButton.text = "Remove"
     }
 
     override fun getItemCount(): Int {
