@@ -1,21 +1,23 @@
 package com.android.highreels.adapters
 
-import android.util.Log
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.android.highreels.R
+import com.android.highreels.activities.MoreVideosActivity
 import com.android.highreels.customViewRegular.RegularTextView
 import com.android.highreels.responseModels.MyVideosResponse
 import com.makeramen.roundedimageview.RoundedImageView
 
-class MyVideosAdapter constructor(
-
+class MyVideosAdapter(
     private val mList: ArrayList<MyVideosResponse>
 ) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    private var context: Context? = null
 
     class MyVideosViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textViewVideoTitle: RegularTextView
@@ -41,6 +43,7 @@ class MyVideosAdapter constructor(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val viewHolder: RecyclerView.ViewHolder
+        context = parent.context
         if (viewType == R.layout.item_my_videos) {
             val view: View = LayoutInflater.from(parent.context)
                 .inflate(R.layout.item_my_videos, parent, false)
@@ -56,7 +59,8 @@ class MyVideosAdapter constructor(
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (position == mList.size) {
             (holder as ViewMoreViewHolder).relativeLayoutMoreVideos.setOnClickListener {
-                Log.i("Hello", "hello")
+                var intent = Intent(context, MoreVideosActivity::class.java)
+                context?.startActivity(intent)
             }
         } else {
             val ItemsViewModel = mList[position]

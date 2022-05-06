@@ -42,9 +42,10 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/materialToolBar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
             app:buttonGravity="center_vertical"
+            app:menu="@menu/main_menu"
             app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
             app:navigationIconTint="@color/black"
             app:titleCentered="true" />
@@ -56,51 +57,21 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true">
 
-
-        <androidx.appcompat.widget.LinearLayoutCompat
+            <com.android.highreels.customViewRegular.RegularButton
+                android:id="@+id/shareButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <com.android.highreels.customViewRegular.RegularButton
-                    android:id="@+id/buttonEdit"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:layout_marginVertical="@dimen/_15sdp"
-                    android:layout_toStartOf="@+id/space"
-                    android:layout_weight="0.7"
-                    android:background="@drawable/gradient_background"
-                    android:clickable="true"
-                    android:elevation="@dimen/_5sdp"
-                    android:focusable="true"
-                    android:foreground="?attr/selectableItemBackgroundBorderless"
-                    android:gravity="center"
-                    android:includeFontPadding="false"
-                    android:text="Edit"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
-
-                <com.android.highreels.customViewRegular.RegularButton
-                    android:id="@+id/shareButton"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:layout_marginVertical="@dimen/_15sdp"
-                    android:layout_toEndOf="@+id/space"
-                    android:layout_weight="0.3"
-                    android:background="@drawable/round_corner_5_radius"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?attr/selectableItemBackgroundBorderless"
-                    android:includeFontPadding="false"
-                    android:text="Share"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/round_corner_5_radius"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:includeFontPadding="false"
+                android:text="Report a Video"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/hMyVideosRecyclerView"

@@ -3,6 +3,7 @@ package com.android.highreels.activities
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.android.highreels.R
 import com.android.highreels.Toast.MDToast
 import kotlinx.android.synthetic.main.activity_create_video.*
@@ -12,7 +13,16 @@ class CreateVideoActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_create_video)
+        val toolBar: Toolbar = materialToolBar
+        toolBar.setNavigationOnClickListener {
+            onBackPressed()
+        }
         initListeners()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
     private fun initListeners() {

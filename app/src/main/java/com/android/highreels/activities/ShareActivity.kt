@@ -1,10 +1,10 @@
 package com.android.highreels.activities
 
-import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.highreels.R
 import com.android.highreels.adapters.ShareAdapter
@@ -17,11 +17,10 @@ class ShareActivity : AppCompatActivity(), ClickListener, View.OnClickListener {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_share)
-        supportActionBar?.customView = materialToolBar
-        val upArrow = resources.getDrawable(R.drawable.ic_arrow_back_black_24dp)
-        upArrow.setColorFilter(resources.getColor(android.R.color.white), PorterDuff.Mode.SRC_ATOP)
-        supportActionBar!!.setHomeAsUpIndicator(upArrow)
-        supportActionBar!!.setHomeButtonEnabled(true)
+        val toolBar: Toolbar = materialToolBar
+        toolBar.setNavigationOnClickListener {
+            onBackPressed()
+        }
         initRecyclerView()
     }
 

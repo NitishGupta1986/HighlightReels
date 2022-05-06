@@ -2,6 +2,7 @@ package com.android.highreels.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.highreels.R
 import com.android.highreels.adapters.FriendsAdapter
@@ -13,7 +14,16 @@ class MyFriendsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_my_friends)
+        val toolBar: Toolbar = materialToolBar
+        toolBar.setNavigationOnClickListener {
+            onBackPressed()
+        }
         initRecyclerView()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
     private fun initRecyclerView() {

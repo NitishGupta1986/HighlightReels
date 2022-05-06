@@ -2,12 +2,14 @@ package com.android.highreels.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import com.android.highreels.R
 import com.android.highreels.adapters.MoreVideosAdapter
 import com.android.highreels.responseModels.MoreVideosResponse
 import kotlinx.android.synthetic.main.activity_more_videos.*
+
 
 class MoreVideosActivity : AppCompatActivity() {
     val myVideosArrayList = ArrayList<MoreVideosResponse>()
@@ -16,7 +18,16 @@ class MoreVideosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_more_videos)
+        val toolBar: Toolbar = materialToolBar
+        toolBar.setNavigationOnClickListener {
+            onBackPressed()
+        }
         initRecyclerView()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
     private fun initRecyclerView() {

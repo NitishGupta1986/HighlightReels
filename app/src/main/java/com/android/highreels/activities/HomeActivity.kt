@@ -37,7 +37,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.imageViewFriendsVideos -> {
-                var intent = Intent(this@HomeActivity, MyFriendsActivity::class.java)
+                var intent = Intent(this@HomeActivity, FriendsVideosActivity::class.java)
                 startActivity(intent)
             }
             R.id.imageViewMyAccount -> {

@@ -1,8 +1,10 @@
 package com.android.highreels.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.android.highreels.R
 import com.android.highreels.Toast.MDToast
@@ -15,12 +17,23 @@ class MyProfileActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_my_profile)
+        val toolBar: Toolbar = materialToolBar
+        toolBar.setNavigationOnClickListener {
+            onBackPressed()
+        }
         initRecyclerView()
         initListeners()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
     private fun initListeners() {
         imageViewAddFriend.setOnClickListener(this)
+        textViewMyFriend.setOnClickListener(this)
+        textViewMyFriends.setOnClickListener(this)
     }
 
     private fun initRecyclerView() {
@@ -65,6 +78,13 @@ class MyProfileActivity : AppCompatActivity(), View.OnClickListener {
         when (view?.id) {
             R.id.imageViewAddFriend -> {
                 MDToast.makeText(this, "Adding Friend", MDToast.LENGTH_LONG).show()
+            }
+            R.id.textViewMyFriend -> {
+                var intent = Intent(this@MyProfileActivity, MyFriendsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.textViewMyFriends -> {
+                textViewMyFriend.performClick()
             }
         }
     }
