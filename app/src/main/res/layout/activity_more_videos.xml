@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MyFriendsActivity">
+    tools:context=".activities.ShareActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,7 +31,6 @@
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/materialToolBar"
                 android:layout_width="wrap_content"
-                app:buttonGravity="center_vertical"
                 android:layout_height="match_parent"
                 app:contentInsetStartWithNavigation="@dimen/_10sdp"
                 app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
@@ -42,19 +41,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="My Friends"
+                android:text="More Video"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageViewSearch"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:tint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_search_24" />
 
             <View
                 android:layout_width="match_parent"
@@ -65,12 +54,12 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewFriends"
+            android:id="@+id/recyclerViewMoreVideos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/relativeLayoutToolBar"
-            tools:itemCount="20"
-            tools:listitem="@layout/item_share_to" />
+            tools:itemCount="10"
+            tools:listitem="@layout/item_more_videos" />
 
     </RelativeLayout>
 

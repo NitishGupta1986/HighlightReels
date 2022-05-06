@@ -17,7 +17,8 @@ class MyFriendsActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        recyclerViewFriends.layoutManager = LinearLayoutManager(this)
+        recyclerViewFriends.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true)
         val shareToResponseArrayList = ArrayList<FriendsResponse>()
         for (i in 1..20) {
             shareToResponseArrayList.add(

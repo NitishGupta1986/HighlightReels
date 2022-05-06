@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayoutMoreVideos"
+    android:layout_width="@dimen/_60sdp"
+    android:layout_height="@dimen/_60sdp">
+
+    <com.android.highreels.customViewRegular.RegularTextView
+        android:id="@+id/textViewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawablePadding="@dimen/_minus4sdp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="More\nVideos"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+</RelativeLayout>

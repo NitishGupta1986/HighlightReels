@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.android.highreels.R
 import com.android.highreels.Toast.MDToast
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.activity_login_signup.logo_layout
 import kotlinx.android.synthetic.main.logo_text_layout.view.*
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {

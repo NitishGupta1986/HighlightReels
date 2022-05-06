@@ -9,6 +9,8 @@ import android.view.inputmethod.InputMethodManager;
 import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
+import com.android.highreels.R;
+import com.android.highreels.recyclerItemDecoration.ItemOffsetDecoration;
 import com.android.highreels.sharedPrefs.SimpleSharedPreferences;
 
 import java.util.regex.Matcher;
@@ -104,13 +106,7 @@ public class AppController extends MultiDexApplication {
         mInstance = this;
     }
 
-//    public void saveString(String key, String value) {
-//        editor = sharedPreferences.edit();
-//        editor.putString(key, value);
-//        editor.apply();
-//    }
-
-//    public String getString(String key) {
-//        return sharedPreferences.getString(key, "");
-//    }
+    public ItemOffsetDecoration setItemDecoration(Context context) {
+        return new ItemOffsetDecoration(context, R.dimen._minus3sdp);
+    }
 }

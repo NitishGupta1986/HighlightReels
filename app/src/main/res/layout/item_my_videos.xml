@@ -1,49 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/_80sdp">
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="@dimen/_90sdp"
+    android:layout_margin="@dimen/_minus2sdp">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageViewUser"
+        android:id="@+id/imageViewVideoThumbmnail"
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_60sdp"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/chaeunwoo"
         app:riv_corner_radius="@dimen/_5sdp" />
 
-    <Space
-        android:id="@+id/space"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true" />
-
-    <com.android.highreels.customViewBold.BoldTextView
-        android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/space"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_toEndOf="@+id/imageViewUser"
-        android:includeFontPadding="false"
-        android:text="Name"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_12ssp" />
-
     <com.android.highreels.customViewRegular.RegularTextView
-        android:id="@+id/textViewTimeAgo"
+        android:id="@+id/textViewVideoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/space"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_2sdp"
-        android:layout_toEndOf="@+id/imageViewUser"
+        android:layout_below="@+id/imageViewVideoThumbmnail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_3sdp"
         android:includeFontPadding="false"
-        android:text="19 Mins Ago"
+        android:text="V K Khurana"
         android:textColor="@color/white"
-        android:textSize="@dimen/_10ssp" />
+        android:textSize="@dimen/_8ssp" />
 
 </RelativeLayout>

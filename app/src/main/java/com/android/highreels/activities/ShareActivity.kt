@@ -21,6 +21,7 @@ class ShareActivity : AppCompatActivity(), ClickListener, View.OnClickListener {
         val upArrow = resources.getDrawable(R.drawable.ic_arrow_back_black_24dp)
         upArrow.setColorFilter(resources.getColor(android.R.color.white), PorterDuff.Mode.SRC_ATOP)
         supportActionBar!!.setHomeAsUpIndicator(upArrow)
+        supportActionBar!!.setHomeButtonEnabled(true)
         initRecyclerView()
     }
 

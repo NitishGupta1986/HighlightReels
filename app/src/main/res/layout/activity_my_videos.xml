@@ -4,62 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ShareActivity">
+    tools:context=".activities.MyVideosActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@drawable/my_videos_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <RelativeLayout
+            android:id="@+id/relativeLayoutImageThumbnail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:alpha="0.7"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/f_image" />
+            android:layout_above="@+id/linearLayoutBottom">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayoutToolBar"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp">
-
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/materialToolBar"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:contentInsetStartWithNavigation="@dimen/_10sdp"
-                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
-                app:navigationIconTint="@color/white"
-                app:titleCentered="true" />
-
-            <com.android.highreels.customViewBold.BoldTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="My Videos"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp" />
-
-            <View
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:layout_alignParentBottom="true"
-                android:alpha="0.3"
-                android:background="@color/white" />
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:alpha="0.8"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/kimsoohyun" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_baseline_play_circle_outline_24" />
+
         </RelativeLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewMyVideos"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            app:buttonGravity="center_vertical"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            app:navigationIconTint="@color/black"
+            app:titleCentered="true" />
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutBottom"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/relativeLayoutToolBar"
-            tools:itemCount="10"
-            tools:listitem="@layout/item_my_videos" />
+            android:layout_height="@dimen/_140sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.android.highreels.customViewRegular.RegularButton
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_toStartOf="@+id/space"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/gradient_background"
+                    android:clickable="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.android.highreels.customViewRegular.RegularButton
+                    android:id="@+id/shareButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/space"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/round_corner_5_radius"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:includeFontPadding="false"
+                    android:text="Share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hMyVideosRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:divider="@null"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                tools:listitem="@layout/item_my_videos" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
