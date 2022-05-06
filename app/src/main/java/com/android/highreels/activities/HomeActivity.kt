@@ -42,7 +42,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.imageViewMyAccount -> {
-                var intent = Intent(this@HomeActivity, ProfileActivity::class.java)
+                var intent = Intent(this@HomeActivity, MyProfileActivity::class.java)
                 startActivity(intent)
             }
             R.id.imageViewAddFriend -> {

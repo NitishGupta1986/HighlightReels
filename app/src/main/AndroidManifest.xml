@@ -21,7 +21,7 @@
             android:name=".activities.CreateVideoActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ProfileActivity"
+            android:name=".activities.MyProfileActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ShareActivity"

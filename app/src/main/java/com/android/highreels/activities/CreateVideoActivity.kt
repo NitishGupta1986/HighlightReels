@@ -26,19 +26,19 @@ class CreateVideoActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.relativeLayoutOne -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                ivOneThumbnail.visibility = View.VISIBLE
             }
             R.id.relativeLayoutTwo -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                ivTwoThumbnail.visibility = View.VISIBLE
             }
             R.id.relativeLayoutThree -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                ivThreeThumbnail.visibility = View.VISIBLE
             }
             R.id.relativeLayoutFour -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                ivFourThumbnail.visibility = View.VISIBLE
             }
             R.id.relativeLayoutUploadVideo -> {
-                MDToast.makeText(this, "Tapped", MDToast.LENGTH_LONG).show()
+                MDToast.makeText(this, "Uploading", MDToast.LENGTH_LONG).show()
             }
         }
     }

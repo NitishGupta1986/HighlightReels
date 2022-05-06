@@ -16,6 +16,7 @@ class LoginSignUpActivity : AppCompatActivity(), View.OnClickListener {
         relativeLayoutSignUpInActive.setOnClickListener(this)
         relativeLayoutSignInInactive.setOnClickListener(this)
         buttonSignIn.setOnClickListener(this)
+        buttonSignUp.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -38,7 +39,10 @@ class LoginSignUpActivity : AppCompatActivity(), View.OnClickListener {
             R.id.buttonSignIn -> {
                 var intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
-
+            }
+            R.id.buttonSignUp -> {
+                var intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
             }
         }
     }
