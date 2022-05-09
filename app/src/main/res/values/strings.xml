@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Highlight Reels</string>
+    <!-- activity_create_video-->
+    <string name="create_video">Create Video</string>
+    <string name="upload_video">Upload Video</string>
+
+    <!-- activity_friends_video-->
+    <string name="report_video">Report a Video</string>
+
+    <!-- activity_home-->
+    <string name="login_text">Sign In to Highlight Reel</string>
+    <string name="welcome_text">Welcome to Highlight Reel</string>
+    <string name="friend_video">Friend Video</string>
+    <string name="account">Account</string>
+    <string name="add_friend">Add Friend</string>
+
+    <!-- activity_more-->
+    <string name="videos_title">More Video</string>
+    <string name="profile_title">My Profile</string>
+    <string name="my_video">My Video</string>
+    <string name="my_friends">My Friends</string>
+
+    <!-- activity_login_signup-->
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="mail_hint">Email / Mobile</string>
+    <string name="password">Password</string>
+    <string name="more_videos">More\nVideos</string>
+    <string name="share">Share</string>
+    <string name="shareTo">Share To</string>
+    <string name="edit">Edit</string>
+    <string name="forget_password">Forgot Password ?</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="mailAddress">Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile No.</string>
 </resources>

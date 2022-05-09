@@ -15,7 +15,7 @@
         android:drawableTint="@color/white"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:text="More\nVideos"
+        android:text="@string/more_videos"
         android:textColor="@color/white"
         android:textSize="@dimen/_8ssp"
         app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />

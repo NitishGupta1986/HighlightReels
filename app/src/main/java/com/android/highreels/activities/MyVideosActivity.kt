@@ -58,7 +58,7 @@ class MyVideosActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         when (view?.id) {
-            R.id.shareButton -> {
+            R.id.reportButton -> {
                 var intent = Intent(this@MyVideosActivity, ShareActivity::class.java)
                 startActivity(intent)
             }

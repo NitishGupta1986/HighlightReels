@@ -58,7 +58,7 @@
             android:layout_centerHorizontal="true">
 
             <com.android.highreels.customViewRegular.RegularButton
-                android:id="@+id/shareButton"
+                android:id="@+id/reportButton"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -68,7 +68,7 @@
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:includeFontPadding="false"
-                android:text="Report a Video"
+                android:text="@string/report_video"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />

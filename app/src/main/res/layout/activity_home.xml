@@ -19,8 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
             android:alpha="0.7"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/f_image" />
 
         <include
@@ -78,7 +78,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="@dimen/_30sdp"
-                                android:text="My Video"
+                                android:text="@string/my_video"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_12ssp" />
 
@@ -120,7 +120,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="@dimen/_30sdp"
-                                android:text="Create Video"
+                                android:text="@string/create_video"
                                 android:textColor="@color/white" />
 
                         </RelativeLayout>
@@ -170,7 +170,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="@dimen/_30sdp"
-                                android:text="Friend Video"
+                                android:text="@string/friend_video"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_12ssp" />
 
@@ -212,7 +212,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="@dimen/_30sdp"
-                                android:text="Account"
+                                android:text="@string/account"
                                 android:textColor="@color/white" />
 
                         </RelativeLayout>
@@ -261,7 +261,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="@dimen/_30sdp"
-                                android:text="Add Friend"
+                                android:text="@string/add_friend"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_12ssp" />
 

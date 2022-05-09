@@ -39,7 +39,7 @@
         android:foreground="?attr/selectableItemBackgroundBorderless"
         android:includeFontPadding="false"
         android:paddingHorizontal="@dimen/_8sdp"
-        android:text="Share"
+        android:text="@string/share"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_10ssp" />

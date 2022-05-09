@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="@dimen/_10sdp"
         android:includeFontPadding="false"
-        android:text="Sign In to Highlight Reel"
+        android:text="@string/login_text"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp" />
 

@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="More Video"
+                android:text="@string/videos_title"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
 

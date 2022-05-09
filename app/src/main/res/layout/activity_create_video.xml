@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Create Video"
+                android:text="@string/create_video"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12ssp" />
 
@@ -242,7 +242,7 @@
                 android:layout_centerInParent="true"
                 android:background="@null"
                 android:includeFontPadding="false"
-                android:text="Upload Video"
+                android:text="@string/upload_video"
                 android:textAllCaps="false"
                 android:textSize="@dimen/_12ssp" />
 

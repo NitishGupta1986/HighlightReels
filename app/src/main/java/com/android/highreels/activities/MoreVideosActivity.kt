@@ -10,7 +10,6 @@ import com.android.highreels.adapters.MoreVideosAdapter
 import com.android.highreels.responseModels.MoreVideosResponse
 import kotlinx.android.synthetic.main.activity_more_videos.*
 
-
 class MoreVideosActivity : AppCompatActivity() {
     val myVideosArrayList = ArrayList<MoreVideosResponse>()
     private var numberOfColoumns: Int = 2

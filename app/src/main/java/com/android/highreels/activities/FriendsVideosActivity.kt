@@ -1,7 +1,5 @@
 package com.android.highreels.activities
 
-import android.graphics.Color
-import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -15,14 +13,12 @@ import com.android.highreels.appController.AppController
 import com.android.highreels.responseModels.MyVideosResponse
 import kotlinx.android.synthetic.main.activity_friends_videos.*
 
-
 class FriendsVideosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_friends_videos)
         supportActionBar?.hide()
         val toolBar: Toolbar = materialToolBar
-        toolBar.overflowIcon?.setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_ATOP)
         toolBar.setNavigationOnClickListener {
             onBackPressed()
         }
