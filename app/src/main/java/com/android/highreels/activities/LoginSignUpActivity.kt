@@ -59,17 +59,13 @@ class LoginSignUpActivity : AppCompatActivity(), View.OnClickListener,
     override fun onEditorAction(textView: TextView?, actionId: Int, keyEvent: KeyEvent?): Boolean {
         var handled = false
         when (textView?.id) {
-            R.id.editTextPassword -> {
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    buttonSignIn.performClick()
-                    handled = true
-                }
+            R.id.editTextPassword -> if (actionId == EditorInfo.IME_ACTION_DONE) {
+                buttonSignIn.performClick()
+                handled = true
             }
-            R.id.editTextMobileNumber -> {
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    buttonSignUp.performClick()
-                    handled = true
-                }
+            R.id.editTextMobileNumber -> if (actionId == EditorInfo.IME_ACTION_DONE) {
+                buttonSignUp.performClick()
+                handled = true
             }
         }
         return handled

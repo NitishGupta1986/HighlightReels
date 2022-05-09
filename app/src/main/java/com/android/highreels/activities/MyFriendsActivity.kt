@@ -26,6 +26,7 @@ class MyFriendsActivity : AppCompatActivity() {
         finish()
     }
 
+
     private fun initRecyclerView() {
         recyclerViewFriends.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true)
